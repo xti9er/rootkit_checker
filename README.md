@@ -1,4 +1,4 @@
-# Xt9 Anti Rootkit
+# Xt9 Anti Rootkit  www.xtiger.net
 
 #############install################
 unzip process_list.zip;cd process_list;make;make install
