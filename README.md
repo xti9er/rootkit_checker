@@ -25,4 +25,3 @@ suse10:~/programme/process_list_proc # cat /proc/ps_list
                         beta v0.11      by xti9er
 [4091] sleep    [may be hiddened by vfs_readdir hook]
 [4098] sleep    [may be hiddened by REMOVE_LINKS]
-
