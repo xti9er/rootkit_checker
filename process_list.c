@@ -11,7 +11,7 @@
 #include <linux/pid.h>
 
 
-#if LINUX_VERSION_CODE < KERNEL_VERSION(2, 6, 24)
+#if LINUX_VERSION_CODE < KERNEL_VERSION(3, 11, 0)
 #define ITERATE_NAME readdir
 #define READ_PROC_PROTO char *buffer, char **start, off_t off,int count, int *eof, void *data
 #else
@@ -134,7 +134,7 @@ int read_proc(READ_PROC_PROTO)
 
 int functn_init (void) {
 
-#if LINUX_VERSION_CODE < KERNEL_VERSION(2, 6, 24)
+#if LINUX_VERSION_CODE < KERNEL_VERSION(3, 10, 0)
 	create_proc_read_entry("ps_list",0,NULL,read_proc,NULL);	
 #else
 	proc_create("ps_list",0,NULL,&proc_file_ops);
